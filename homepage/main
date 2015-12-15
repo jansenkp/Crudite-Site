@@ -1,0 +1,136 @@
+<?php get_header(); ?>
+
+	<main id="home" role="main">
+
+<!-- 	Hello -->
+
+		<section id="hero" style="background-image:url(<?php echo get_template_directory_uri(); ?>/_/graphics/media-hero-home.jpg);">
+
+			<div class="center-copy">
+
+				<div class="inner">
+
+					<h2>Veggie forward meals,<br>delivered</h2> <!-- only 1 H2.... <br> goes inside <h2> to create new line -->
+
+					<div class="button-wrap">
+
+						<a id="convert" class="button" href="<?php echo site_url('menu'); ?>">Start today</a> <!-- you had a link inside of a button... unnecessary -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="process">
+
+					<h2>Invite us to your dinner table,<br>and take the hassle out of healthy eating.</h2>
+
+					<hr>
+
+					<ul class="clear">
+
+						<li class="number">
+
+							<img src="<?php echo get_template_directory_uri(); ?>/_/graphics/ui-process-step-1.png">
+							<span class="digit">1</span>
+							<h3>Pick your meals<br>from our weekly menu</h3>
+
+						</li>
+
+
+						<li class="number">
+
+							<img src="<?php echo get_template_directory_uri(); ?>/_/graphics/ui-process-step-2.png">
+							<span class="digit">2</span>
+							<h3>Get meals delivered to<br>your doorstep</h3>
+
+						</li>
+
+						<li class="number">
+
+							<img src="<?php echo get_template_directory_uri(); ?>/_/graphics/ui-process-step-3.png">
+							<span class="digit">3</span>
+							<h3>Heat up, eat,<br>and feel great</h3>
+
+						</li>
+
+					</ul>
+
+		</section>
+
+		<section id="why" class="pop-section">
+
+			<div class="wrap">
+
+				<h2>Why #eatcrudité?</h2>
+
+				<hr>
+
+				<div class="box" id="item-1">
+					<h3>Veggie forward</h3>
+					<p>Each unique meal is made with fruits and vegetables, wholesome grains and lean non-animal proteins</p>
+					<img class="pointer" src="<?php echo get_template_directory_uri(); ?>/_/graphics/ui-pointer-1.png">
+				</div>
+
+				<div class="box" id="item-2">
+					<h3>Healthy made easy</h3>
+					<p>No additional prep work required! Meals are delivered to your door ready to eat and can be heated up in under 10 minutes</p>
+					<img class="pointer" src="<?php echo get_template_directory_uri(); ?>/_/graphics/ui-pointer-2.png">
+				</div>
+
+				<div class="box" id="item-3">
+					<h3>Fresh & local</h3>
+					<p>We use fresh, local ingredients from farmers in the tri-state area</p>
+					<img class="pointer" src="<?php echo get_template_directory_uri(); ?>/_/graphics/ui-pointer-3.png">
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="map">
+
+			<div id="location">
+
+				<div class="location-header">
+
+					<h2>Our growing delivery areas</h2>
+
+					<hr>
+
+				</div>
+
+				<img class="mobile" src="<?php the_field('map_image_mobile', 'options'); ?>">
+				<img class="tablet" src="<?php the_field('map_image_desktop', 'options'); ?>">
+				<img class="desktop" src="<?php the_field('map_image_desktop', 'options'); ?>">
+
+			</div>
+
+		</section>
+
+		<section id="ready" style="background-image:url(<?php echo get_template_directory_uri(); ?>/_/graphics/media-ready-home.jpg);">
+
+			<div class="center-copy">
+
+				<div class="inner">
+
+				<h2>Change the way you approach your plate</h2>
+
+					<div class="button-wrap">
+
+						<a id="convert" class="button" href="<?php echo site_url('menu'); ?>">I'm ready</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</main>
+
+<?php get_footer(); ?>
